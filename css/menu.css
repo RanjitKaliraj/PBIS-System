@@ -1,0 +1,71 @@
+#nav ul ul {
+display: none;			/* hide the nested child list*/
+}
+#nav ul li:hover > ul {		/*when hover, display the child list in a block*/
+display: block;
+}
+#nav ul { 		
+list-style: none;		
+position: relative;		
+}
+#nav ul li {		
+float: left;
+position:relative; 
+-webkit-box-shadow:0 0 5px black;
+-moz-box-shadow:0 0 5px black;
+box-shadow:0 0 10px black;
+width: 180px;
+background-color:rgba(33, 33, 33, 0.6);	
+}
+#nav ul li:hover {		/*color of list element when hovered*/
+background: rgba(41, 48, 51, 0.9);
+}
+#nav ul li:hover a {		/*color of text of menu element when hovered*/
+color: #fff;
+}
+#nav ul ul {		/*position of the child list*/
+padding: 2px 0px 0px 0px;
+position: absolute; top 0; 
+}
+#nav ul ul li {				/*styling for the child lists elements*/
+background:grey;;
+float: none; 
+border-top: 1px solid #6b727c;
+border-bottom: 1px solid #575f6a;
+position: relative;
+}
+#nav ul ul li a {				/*styling place of child list box*/
+padding: 10px 35px;
+color: #fff;
+text-align:center;
+}	
+#nav ul ul li a:hover {				/*background color for child element while hovered*/
+color:darkgrey;
+}			
+#nav ul li a:hover {				
+color:darkgrey;
+}
+#nav ul li a {			
+display: block; padding: 8px 20px;
+color: white; text-decoration: none;
+text-align:center;
+}
+/*this is for side menu*/		
+#subnav ul li:hover a {		/*css for side menus*/
+color: green;
+border-bottom-style:underline;
+}
+#subnav ul li:hover{ 
+TEXT-DECORATION: underline;
+color: green; 
+}
+#subnav ul li { 
+float:left;
+list-style-type: square;
+color: grey;
+}
+#subnav ul li a {	
+color: grey;
+text-decoration: none;
+text-align:center;
+}
